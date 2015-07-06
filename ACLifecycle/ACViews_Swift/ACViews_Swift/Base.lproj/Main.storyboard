@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ACViews_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="il5-kS-rev"/>
+                        <viewControllerLayoutGuide type="bottom" id="nNZ-vp-xNz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seN-w9-D8B">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="UIViews from Storyboard" id="Wa4-Bw-SPM"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-ac-mka" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="55" y="94" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-33-O6Z">
+                                <rect key="frame" x="23" y="134" width="118" height="30"/>
+                                <state key="normal" title=" Neque porro">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressButtonN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWv-dT-ejD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-Hg-1Hz">
+                                <rect key="frame" x="186" y="134" width="106" height="30"/>
+                                <state key="normal" title="Lorem ipsum">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PressButtonL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2i-6j-hMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5i-yg-gI5">
+                                <rect key="frame" x="112" y="187" width="96" height="30"/>
+                                <state key="normal" title="Open Gesture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7fh-na-dPd" kind="modal" id="9du-FS-0xx"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-mx-guE">
+                                <rect key="frame" x="0.0" y="257" width="320" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Od-Va-7nl"/>
+                                    <action selector="choice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2W-uv-qR0"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lorem ipsum..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWc-pu-nB5">
+                                <rect key="frame" x="16" y="322" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-pw-j1k">
+                                <rect key="frame" x="101" y="377" width="118" height="31"/>
+                                <connections>
+                                    <action selector="SliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EzE-kb-TtG"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-2W-Unb">
+                                <rect key="frame" x="136" y="429" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SwitchValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="wah-29-wHN"/>
+                                </connections>
+                            </switch>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-uR-Atz">
+                                <rect key="frame" x="150" y="528" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-Mh-OW1">
+                                <rect key="frame" x="90" y="490" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonL" destination="t3L-Hg-1Hz" id="Vuv-FW-KmE"/>
+                        <outlet property="ButtonN" destination="t3L-Hg-1Hz" id="TXz-Kt-pBU"/>
+                        <outlet property="Label1" destination="w6U-ac-mka" id="eQz-S3-qdr"/>
+                        <outlet property="Progress" destination="RKE-Mh-OW1" id="cJ5-Fq-M0X"/>
+                        <outlet property="Slider" destination="8Ky-pw-j1k" id="FFE-FK-Nqk"/>
+                        <outlet property="Switch" destination="nsX-2W-Unb" id="PfV-jV-6lH"/>
+                        <outlet property="Waiting" destination="Tbd-uR-Atz" id="ID7-FU-cWB"/>
+                        <outlet property="input" destination="VWc-pu-nB5" id="OCx-oN-Z41"/>
+                        <outlet property="onetwothree" destination="rJc-mx-guE" id="hfx-oo-lAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161.59999999999999" y="394.75999999999999"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="nYO-mh-2VH">
+            <objects>
+                <viewController id="7fh-na-dPd" customClass="SecondViewController" customModule="ACViews_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lff-SC-6dF"/>
+                        <viewControllerLayoutGuide type="bottom" id="t6I-lb-Wl5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VrL-85-fsO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-DH-rb4">
+                                <rect key="frame" x="0.0" y="26" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="bWf-qy-DlV"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I61-MX-Gbk" appends="YES" id="KFv-0S-LLw"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdE-iC-Gh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="I61-MX-Gbk"/>
+                <pinchGestureRecognizer id="jm0-51-wmp"/>
+                <rotationGestureRecognizer id="Nwr-pF-XU5"/>
+                <swipeGestureRecognizer direction="right" id="ncq-BI-Xma"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Y0X-cy-0Ue"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="3rm-CK-pYb"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QEi-g9-n82"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="1024.9999999999998"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
