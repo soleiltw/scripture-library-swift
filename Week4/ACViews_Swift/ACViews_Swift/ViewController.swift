@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         
         
-            input.text = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)
+            input.placeholder = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)
         
         
         

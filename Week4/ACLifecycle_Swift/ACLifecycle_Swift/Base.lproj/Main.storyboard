@@ -7,7 +7,6 @@
         <!--Master-->
         <scene sceneID="oS6-XF-FXe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PNr-GF-ffa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="FSG-sc-zfG" customClass="NewTableViewController" customModule="ACLifecycle_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lzx-ha-Gop">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -63,8 +62,9 @@
                         <outlet property="TimeTable" destination="lzx-ha-Gop" id="jm1-Cf-3GL"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNr-GF-ffa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="-190"/>
+            <point key="canvasLocation" x="778" y="-90"/>
         </scene>
         <!--Master-->
         <scene sceneID="0Xh-1I-c9U">
@@ -100,7 +100,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VI-V7-yjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="208.53333333333333" y="-189.33333333333334"/>
+            <point key="canvasLocation" x="778" y="-786"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

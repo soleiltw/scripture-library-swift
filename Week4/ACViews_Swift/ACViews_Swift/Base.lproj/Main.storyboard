@@ -17,19 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seN-w9-D8B">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="UIViews from Storyboard" id="Wa4-Bw-SPM"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-ac-mka" colorLabel="IBBuiltInLabel-Orange">
-                                <rect key="frame" x="55" y="94" width="210" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-33-O6Z">
-                                <rect key="frame" x="23" y="134" width="118" height="30"/>
+                                <rect key="frame" x="55" y="134" width="118" height="30"/>
                                 <state key="normal" title=" Neque porro">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-Hg-1Hz">
-                                <rect key="frame" x="186" y="134" width="106" height="30"/>
+                                <rect key="frame" x="198" y="134" width="106" height="30"/>
                                 <state key="normal" title="Lorem ipsum">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5i-yg-gI5">
-                                <rect key="frame" x="112" y="187" width="96" height="30"/>
+                                <rect key="frame" x="135" y="188" width="96" height="30"/>
                                 <state key="normal" title="Open Gesture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,7 +50,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-mx-guE">
-                                <rect key="frame" x="0.0" y="257" width="320" height="29"/>
+                                <rect key="frame" x="0.0" y="257" width="375" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -68,28 +62,34 @@
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lorem ipsum..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWc-pu-nB5">
-                                <rect key="frame" x="16" y="322" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="319" width="371" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-pw-j1k">
-                                <rect key="frame" x="101" y="377" width="118" height="31"/>
+                                <rect key="frame" x="124" y="378" width="118" height="31"/>
                                 <connections>
                                     <action selector="SliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="EzE-kb-TtG"/>
                                 </connections>
                             </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-2W-Unb">
-                                <rect key="frame" x="136" y="429" width="51" height="31"/>
+                                <rect key="frame" x="159" y="429" width="51" height="31"/>
                                 <connections>
                                     <action selector="SwitchValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="wah-29-wHN"/>
                                 </connections>
                             </switch>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-uR-Atz">
-                                <rect key="frame" x="150" y="528" width="20" height="20"/>
+                                <rect key="frame" x="173" y="528" width="20" height="20"/>
                             </activityIndicatorView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-Mh-OW1">
-                                <rect key="frame" x="90" y="490" width="150" height="2"/>
+                                <rect key="frame" x="108" y="490" width="150" height="2"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-ac-mka" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="80" y="94" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -122,29 +122,92 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-DH-rb4">
-                                <rect key="frame" x="0.0" y="26" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="26" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="bWf-qy-DlV"/>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-wy-lxm">
+                                <rect key="frame" x="62" y="208" width="250" height="250"/>
+                                <color key="backgroundColor" red="1" green="0.8241051626103042" blue="0.35681782474556922" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="I61-MX-Gbk" appends="YES" id="Z5z-ec-o1M"/>
+                                    <outletCollection property="gestureRecognizers" destination="1u6-a3-WpW" appends="YES" id="zuv-oD-EaB"/>
+                                    <outletCollection property="gestureRecognizers" destination="jm0-51-wmp" appends="YES" id="cVJ-1o-o7k"/>
+                                    <outletCollection property="gestureRecognizers" destination="Nwr-pF-XU5" appends="YES" id="L0L-Ud-uCP"/>
+                                    <outletCollection property="gestureRecognizers" destination="QEi-g9-n82" appends="YES" id="QXV-0U-V9p"/>
+                                    <outletCollection property="gestureRecognizers" destination="Y0X-cy-0Ue" appends="YES" id="SSG-Bt-h1h"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="I61-MX-Gbk" appends="YES" id="KFv-0S-LLw"/>
+                            <outletCollection property="gestureRecognizers" destination="ncq-BI-Xma" appends="YES" id="y7D-fe-Okl"/>
+                            <outletCollection property="gestureRecognizers" destination="4g0-Yt-Wlo" appends="YES" id="eRd-gG-lrK"/>
+                            <outletCollection property="gestureRecognizers" destination="xPX-4U-SvK" appends="YES" id="om7-ec-r5M"/>
+                            <outletCollection property="gestureRecognizers" destination="ZT4-Xy-RME" appends="YES" id="0og-8g-eph"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="BigView" destination="VrL-85-fsO" id="hIj-vG-o7P"/>
+                        <outlet property="SmallView" destination="xaJ-wy-lxm" id="stE-t8-2rz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdE-iC-Gh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="I61-MX-Gbk"/>
-                <pinchGestureRecognizer id="jm0-51-wmp"/>
-                <rotationGestureRecognizer id="Nwr-pF-XU5"/>
-                <swipeGestureRecognizer direction="right" id="ncq-BI-Xma"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Y0X-cy-0Ue"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="3rm-CK-pYb"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QEi-g9-n82"/>
+                <tapGestureRecognizer id="I61-MX-Gbk">
+                    <connections>
+                        <action selector="TapOnce:" destination="7fh-na-dPd" id="xPv-FG-PC8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="1u6-a3-WpW">
+                    <connections>
+                        <action selector="TapTwice:" destination="7fh-na-dPd" id="TlQ-vE-bFE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="jm0-51-wmp">
+                    <connections>
+                        <action selector="TwoTapFarAway:" destination="7fh-na-dPd" id="5jP-Ss-NHF"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Nwr-pF-XU5">
+                    <connections>
+                        <action selector="RotateControll:" destination="7fh-na-dPd" id="Zb5-8R-xXj"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ncq-BI-Xma">
+                    <connections>
+                        <action selector="SwipeRight:" destination="7fh-na-dPd" id="Eln-lF-qGf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="4g0-Yt-Wlo">
+                    <connections>
+                        <action selector="SwipeLeft:" destination="7fh-na-dPd" id="H8j-50-rV8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="xPX-4U-SvK">
+                    <connections>
+                        <action selector="SwipeUp:" destination="7fh-na-dPd" id="qNu-NJ-rRq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="ZT4-Xy-RME">
+                    <connections>
+                        <action selector="SwipeDown:" destination="7fh-na-dPd" id="xBh-kt-D3H"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Y0X-cy-0Ue">
+                    <connections>
+                        <action selector="Pan:" destination="7fh-na-dPd" id="WJy-a5-IHc"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QEi-g9-n82">
+                    <connections>
+                        <action selector="LongPress:" destination="7fh-na-dPd" id="QGu-hq-wyL"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="163" y="1024.9999999999998"/>
+            <point key="canvasLocation" x="163" y="1024"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -20,15 +20,61 @@ class NewTableViewController: UITableViewController {
     
     @IBOutlet var TimeTable: UITableView!
     
+    
+    var ListArray: NSArray = []
+    var ArrayCounter = 0
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        TimeTable.dataSource = self
+        TimeTable.delegate = self
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+
+    
     @IBAction func PressPlus(sender: AnyObject) {
         
-        
+        /////擷取系統時間
         let date = NSDate()
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute, fromDate: date)
         let hour = components.hour
         let minutes = components.minute
         let second = components.second
+        //////
+        
+        
+        
+        func tableView(tableView: UITableView!, numberOfRowsInSection section:Int) -> Int {
+            
+            return ListArray.count
+            
+        }
+        
+        
+        
+        
+        //填充UITableViewCell中文字標簽的值
+        
+        
+        
+        //ListArray += NSDate()
+        
+        
+        ArrayCounter++
+        
+        
+        
+        
+        ///self.detailViewController = (ACDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
         
     }
     
@@ -67,7 +113,7 @@ class NewTableViewController: UITableViewController {
     ///////////////////
 
     
-    override func viewDidLoad() {
+    /*override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -80,7 +126,7 @@ class NewTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }*/
 
     // MARK: - Table view data source
 
