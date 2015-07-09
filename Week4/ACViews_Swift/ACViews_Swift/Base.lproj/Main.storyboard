@@ -148,6 +148,7 @@
                             <outletCollection property="gestureRecognizers" destination="4g0-Yt-Wlo" appends="YES" id="eRd-gG-lrK"/>
                             <outletCollection property="gestureRecognizers" destination="xPX-4U-SvK" appends="YES" id="om7-ec-r5M"/>
                             <outletCollection property="gestureRecognizers" destination="ZT4-Xy-RME" appends="YES" id="0og-8g-eph"/>
+                            <outletCollection property="gestureRecognizers" destination="QEi-g9-n82" appends="YES" id="OVx-U8-i7H"/>
                         </connections>
                     </view>
                     <connections>

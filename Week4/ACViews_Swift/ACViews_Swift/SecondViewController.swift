@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//import Cocoa
+import Darwin
 
 class SecondViewController: UIViewController {
 
@@ -19,6 +21,43 @@ class SecondViewController: UIViewController {
     
     @IBAction func TapTwice(sender: UITapGestureRecognizer) {
         
+        
+        
+        SmallView.backgroundColor = UIColor.brownColor()
+        SmallView.alpha = 1.0
+        
+        
+        let isScaled : (Bool)
+        isScaled = !CGAffineTransformIsIdentity(SmallView.transform)
+        
+        if !isScaled {
+            
+            var scalingTransform :(CGAffineTransform)
+            
+            scalingTransform = CGAffineTransformMakeScale(1.2 , 1.2)
+            
+            SmallView.transform = scalingTransform
+        }
+        
+        else {
+            SmallView.transform = CGAffineTransformIdentity
+        }
+
+        
+        
+        /*
+        if !isScaled {
+            CGAffineTransform scalingTransform;
+            scalingTransform = CGAffineTransformMakeScale(1.2, 1.2)
+            SmallView.view.transform = scalingTransform;
+        } else {
+            SmallView.view.transform = CGAffineTransformIdentity;
+        }
+        */
+
+        
+        
+        /* My code
         if(TapTwiceCounter == 1)
         {
             SmallView.backgroundColor = UIColor.brownColor()
@@ -39,10 +78,64 @@ class SecondViewController: UIViewController {
         }
         
         TapTwiceCounter++
+        */
 
     }
     @IBAction func Pan(sender: UIPanGestureRecognizer) {
         
+        /*
+        var translation = sender.translationInView(self.view)
+        sender.view!.center = CGPointMake(sender.view!.center.x + translation.x, sender.view!.center.y + translation.y)
+        sender .setTranslation(CGPointMake(0 , 0), inView: self.view)
+        
+        if sender.state == UIGestureRecognizerState.Ended{
+            
+            var velocity = sender.velocityInView(self.view)
+            
+           
+            let magnitude = sqrtf((velocity.x * velocity.x) + (velocity.y * velocity.y))
+            let slideMult = magnitude / 200
+            print("magnitude: %f , slideMult: %f" , magnitude , slideMult )
+            
+            var slideFactor : Float
+            slideFactor = 0.1 * slideMult
+            let finalPoint = CGPointMake(sender.view!.center.x + (velocity.x * slideFactor) , sender.view!.center.y + (velocity.y * slideFactor))
+            finalPoint.x = min(max(finalPoint.x, 0), self.view.bounds.size.width)
+            finalPoint.y = min(max(finalPoint.y, 0), self.view.bounds.size.height)
+
+           
+            UIView.animateWithDuration(slideFactor*2 , delay: 0 , options: UIViewAnimationOptions.CurveEaseOut, animations: { (sender.view!.center); finalPoint}, completion: nil)
+        }
+        */
+        
+        /*
+        UIPanGestureRecognizer *panGesture = (UIPanGestureRecognizer *)sender;
+        CGPoint translation = [panGesture translationInView:self.view];
+        panGesture.view.center = CGPointMake(panGesture.view.center.x + translation.x,
+        panGesture.view.center.y + translation.y);
+        [panGesture setTranslation:CGPointMake(0, 0) inView:self.view];
+        
+        if (panGesture.state == UIGestureRecognizerStateEnded) {
+        
+        CGPoint velocity = [panGesture velocityInView:self.view];
+        CGFloat magnitude = sqrtf((velocity.x * velocity.x) + (velocity.y * velocity.y));
+        CGFloat slideMult = magnitude / 200;
+        NSLog(@"magnitude: %f, slideMult: %f", magnitude, slideMult);
+        
+        float slideFactor = 0.1 * slideMult; // Increase for more of a slide
+        CGPoint finalPoint = CGPointMake(panGesture.view.center.x + (velocity.x * slideFactor),
+        panGesture.view.center.y + (velocity.y * slideFactor));
+        finalPoint.x = MIN(MAX(finalPoint.x, 0), self.view.bounds.size.width);
+        finalPoint.y = MIN(MAX(finalPoint.y, 0), self.view.bounds.size.height);
+        
+        [UIView animateWithDuration:slideFactor*2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        panGesture.view.center = finalPoint;
+        } completion:nil];
+        
+        }
+        */
+        
+        //My code
         let translation = sender.translationInView(self.view)
         if let view = sender.view {
             view.center = CGPoint(x:view.center.x + translation.x,
@@ -50,7 +143,8 @@ class SecondViewController: UIViewController {
         }
         sender.setTranslation(CGPointZero, inView: self.view)
         
-           }
+        
+    }
     @IBAction func TwoTapFarAway(sender: UIPinchGestureRecognizer) {
         
         if(sender.state == UIGestureRecognizerState.Began)
