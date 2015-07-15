@@ -1,15 +1,15 @@
 //
-//  ACLifeCycle_Swift_2Tests.swift
-//  ACLifeCycle_Swift_2Tests
+//  Kotel_SwiftTests.swift
+//  Kotel_SwiftTests
 //
-//  Created by Jeremy Chien on 2015/7/8.
+//  Created by Jeremy Chien on 2015/7/14.
 //  Copyright (c) 2015年 Jeremy Chien. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class ACLifeCycle_Swift_2Tests: XCTestCase {
+class Kotel_SwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ACLifecycle_Swift.xcodeproj">
+      location = "group:../../Documents/swift_projects/scripture-library-swift/JsonTest.playground">
    </FileRef>
 </Workspace>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ACLifeCycle_Swift_2.xcodeproj">
+      location = "self:Kotel_Swift.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,14 +1,15 @@
 //
 //  AppDelegate.swift
-//  ACLifeCycle_Swift_2
+//  Kotel_Swift
 //
-//  Created by Jeremy Chien on 2015/7/8.
+//  Created by Jeremy Chien on 2015/7/14.
 //  Copyright (c) 2015年 Jeremy Chien. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
