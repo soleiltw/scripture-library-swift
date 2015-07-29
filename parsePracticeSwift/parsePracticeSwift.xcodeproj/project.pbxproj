@@ -14,7 +14,6 @@
 		3BBB894F1B67349900580272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB894E1B67349900580272 /* Images.xcassets */; };
 		3BBB89521B67349900580272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB89501B67349900580272 /* LaunchScreen.xib */; };
 		3BBB895E1B67349900580272 /* parsePracticeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB895D1B67349900580272 /* parsePracticeSwiftTests.swift */; };
-		3BBB89691B67352B00580272 /* restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB89681B67352B00580272 /* restaurant.m */; };
 		3BBB896B1B6735B200580272 /* restaureantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB896A1B6735B200580272 /* restaureantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +41,6 @@
 		3BBB895C1B67349900580272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBB895D1B67349900580272 /* parsePracticeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parsePracticeSwiftTests.swift; sourceTree = "<group>"; };
 		3BBB89671B67352B00580272 /* parsePracticeSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parsePracticeSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		3BBB89681B67352B00580272 /* restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = restaurant.m; sourceTree = "<group>"; };
 		3BBB896A1B6735B200580272 /* restaureantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaureantTableViewController.swift; sourceTree = "<group>"; };
 		C1FE0A78AD61780691A2578A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +67,6 @@
 		3BBB89391B67349900580272 = {
 			isa = PBXGroup;
 			children = (
-				3BBB89681B67352B00580272 /* restaurant.m */,
 				3BBB89441B67349900580272 /* parsePracticeSwift */,
 				3BBB895A1B67349900580272 /* parsePracticeSwiftTests */,
 				3BBB89431B67349900580272 /* Products */,
@@ -282,7 +279,6 @@
 				3BBB896B1B6735B200580272 /* restaureantTableViewController.swift in Sources */,
 				3BBB894A1B67349900580272 /* ViewController.swift in Sources */,
 				3BBB89481B67349900580272 /* AppDelegate.swift in Sources */,
-				3BBB89691B67352B00580272 /* restaurant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

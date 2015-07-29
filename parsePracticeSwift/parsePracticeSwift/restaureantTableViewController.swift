@@ -34,6 +34,7 @@ class restaureantTableViewController: PFQueryTableViewController {
     override func queryForTable() -> PFQuery {
         var query:PFQuery = PFQuery(className:self.parseClassName!)
         
+        
         if(objects?.count == 0)
         {
             query.cachePolicy = PFCachePolicy.CacheThenNetwork
@@ -43,6 +44,10 @@ class restaureantTableViewController: PFQueryTableViewController {
         
         return query
     }
+    
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
