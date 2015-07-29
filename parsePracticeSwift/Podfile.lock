@@ -1,0 +1,52 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BButton (4.0.2)
+  - Bolts/Tasks (1.2.0)
+  - CTCheckbox (0.0.4)
+  - Parse (1.7.5.3):
+    - Bolts/Tasks (>= 1.2.0)
+  - ParseUI (1.1.4):
+    - Parse (~> 1.7)
+  - RNActivityView (0.0.6)
+  - TDSemiModal (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - BButton
+  - CTCheckbox (~> 0.0.3)
+  - Parse (~> 1.7.3)
+  - ParseUI (~> 1.1.3)
+  - RNActivityView
+  - TDSemiModal
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  CTCheckbox: 51ca73c98cddb96a665e20660e3f2b7a741645bd
+  Parse: 373adbb1ad2e34d383542c3b28f678c49ebe4881
+  ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
+  RNActivityView: 889126dc047fc6fa10aac88a13ebff677c53bf82
+  TDSemiModal: f229d756bc3bf1a22767777bcd2e2e96751158fc
+
+COCOAPODS: 0.38.0

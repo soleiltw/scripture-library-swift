@@ -15,13 +15,12 @@ class thirdViewController: UIViewController {
     var officialWebName:String=""
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        navigationItem.title = officialWebAddr
+                super.viewDidLoad()
         
         var url = NSURL(string:"\(officialWebAddr)")
         var request = NSURLRequest(URL: url!)
         webView!.loadRequest(request)
+        webAddr.text = officialWebAddr
     }
 
     @IBOutlet weak var webView: UIWebView!
@@ -29,11 +28,13 @@ class thirdViewController: UIViewController {
     @IBOutlet weak var refresh: UIBarButtonItem!
     @IBOutlet weak var lastpage: UIBarButtonItem!
     @IBOutlet weak var nextpage: UIBarButtonItem!
+    @IBOutlet weak var webAddr: UITextField!
     
     @IBAction func doStop(sender: UIBarButtonItem) {
         
         webView.stopLoading()
     }
+    
     @IBAction func doRefresh(sender: UIBarButtonItem) {
         
         webView.reload()

@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B59241E1B54B2B0001439E6 /* ACViews_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACViews_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BC3F08A1B4A7691003DD6F3 /* ACViews_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACViews_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC3F08E1B4A7691003DD6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BC3F08F1B4A7691003DD6F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				3BC3F0981B4A7691003DD6F3 /* LaunchScreen.xib */,
 				3BC3F08D1B4A7691003DD6F3 /* Supporting Files */,
 				3BC3F0AF1B4A8BD3003DD6F3 /* SecondViewController.swift */,
+				3B59241E1B54B2B0001439E6 /* ACViews_Swift-Bridging-Header.h */,
 			);
 			path = ACViews_Swift;
 			sourceTree = "<group>";
@@ -346,9 +348,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ACViews_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACViews_Swift/ACViews_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,9 +361,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ACViews_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACViews_Swift/ACViews_Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -415,6 +422,7 @@
 				3BC3F0AB1B4A7691003DD6F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC3F0AC1B4A7691003DD6F3 /* Build configuration list for PBXNativeTarget "ACViews_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +431,7 @@
 				3BC3F0AE1B4A7691003DD6F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

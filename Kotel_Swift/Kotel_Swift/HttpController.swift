@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HttpProtocol{
-    func didReceiveResults(results:NSArray)
+    func didReceiveResults(results:NSArray) // 用result 傳送讀取的資料
 }
 
 class  HttpController:NSObject{
@@ -21,9 +21,14 @@ class  HttpController:NSObject{
         var nsUrl: NSURL = NSURL(string: url)!
         var request:NSURLRequest = NSURLRequest(URL:nsUrl)
         
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+            
+            (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
+            
             var httpResponse = response as! NSHTTPURLResponse
-            if httpResponse.statusCode == 200{
+            
+            if httpResponse.statusCode == 200{ //The request was fulfilled.
                 
                 var array: NSArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSArray
                 self.delegate?.didReceiveResults(array)

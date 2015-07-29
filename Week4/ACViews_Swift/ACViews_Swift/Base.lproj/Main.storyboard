@@ -169,7 +169,7 @@
                 </tapGestureRecognizer>
                 <pinchGestureRecognizer id="jm0-51-wmp">
                     <connections>
-                        <action selector="TwoTapFarAway:" destination="7fh-na-dPd" id="5jP-Ss-NHF"/>
+                        <action selector="Pinch:" destination="7fh-na-dPd" id="h8p-V6-lcI"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="Nwr-pF-XU5">
