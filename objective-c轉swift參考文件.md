@@ -234,31 +234,33 @@
 		  		
 		  		    
 		  		    PFQueryTableViewController 
+
 ##References
-	 - [Apple官方教學中文版](http://tommy60703.gitbooks.io/swift-language-traditional-chinese/content/index.html)（1.swift與objective-c的相異之處）
-	 	- swift 的基礎語法還有 swift 語言的獨特之處
-	 - Apple官方文件（1.swift與objective-c的相異之處）
-	 	- [The Swift Programming Language](https://itunes.apple.com/tw/book/swift-programming-language/id881256329?l=zh&mt=11)
-	 		- 詳細的swift語法教學
-	 	- [Using Swift with Cocoa and Objective-c](https://itunes.apple.com/tw/book/using-swift-cocoa-objective/id888894773?	 		 	l=zh&mt=11)
-	 		- 與上一本書相似，但本書的第一章節有許多objective-c和swift對照的短小範例，有助於objective-c開發者熟悉swift語法
+	 
+- [Apple官方教學中文版](http://tommy60703.gitbooks.io/swift-language-traditional-chinese/content/index.html)（1.swift與objective-c的相異之處）
+	- swift 的基礎語法還有 swift 語言的獨特之處
+- Apple官方文件（1.swift與objective-c的相異之處）
+	- [The Swift Programming Language](https://itunes.apple.com/tw/book/swift-programming-language/id881256329?l=zh&mt=11)
+	 	- 詳細的swift語法教學
 	
+	- [Using Swift with Cocoa and Objective-c](https://itunes.apple.com/tw/book/using-swift-cocoa-objective/id888894773?	 		 	l=zh&mt=11)
+	 	- 與上一本書相似，但本書的第一章節有許多objective-c和swift對照的短小範例，有助於objective-c開發者熟悉swift語法
 	
-	 - [Swift API 處理](http://leoyeh.me:8080/2014/11/30/Swift-API-處理-1/)（2.swift 使用JSON作為資料來源）
-	 	-  有一個簡短的範例程式，講述如何獲取JSON資料並加以利用
-	 - [JSON排版網站](http://json.parser.online.fr)（2.swift 使用JSON作為資料來源）
-	 	- 許多開放資料網站的JSON檔所有資料都在同一行，非常不利於閱讀，這個網站可以將JSON資料排版成易於閱讀的格式
-	 - [swift經緯度與地址雙向轉換](http://toyo0103.blogspot.tw/2015/03/swift-clgeocoder.html) （3.swift MapKit的應用）
-	  	- 地址轉經緯度
-	  	- 經緯度轉地址
-	  	- 如何利用轉型過後的資料與MapKit做各種應用
-	 - [cocoapods的環境安裝](http://code4app.com/article/cocoapods-install-usage)（4.swift Cocoapods環境安裝）
-	 	-  清楚講述安裝步驟，並解釋每個產生檔案的作用意義
-	 - [parse與 swift的連接](http://blog.parse.com/announcements/building-apps-with-parse-and-swift/)（5. swift與parse之間的連結）
-	 	- 清楚講述如何將parse雲端資料庫和swift做連結並獲取相關資料
-	 - [parse.com](https://www.parse.com)	
-	 	- 可以手動建立資料庫也可以將JSON檔輸入自動產生資料庫
-	 - [在swift專案中使用objective-c 的函式](http://myxcodepractice.blogspot.tw/2014/07/swiftobjective-c-swiftmix.html)
-	 - [在objective-c 專案中寫 swift＆在swift 專案中寫 objective-c](http://tanjunqiang.com/index.php/archives/11)
+- [Swift API 處理](http://leoyeh.me:8080/2014/11/30/Swift-API-處理-1/)（2.swift 使用JSON作為資料來源）
+	 -  有一個簡短的範例程式，講述如何獲取JSON資料並加以利用
+- [JSON排版網站](http://json.parser.online.fr)（2.swift 使用JSON作為資料來源）
+	 - 許多開放資料網站的JSON檔所有資料都在同一行，非常不利於閱讀，這個網站可以將JSON資料排版成易於閱讀的格式
+- [swift經緯度與地址雙向轉換](http://toyo0103.blogspot.tw/2015/03/swift-clgeocoder.html) （3.swift MapKit的應用）
+	 - 地址轉經緯度
+	 - 經緯度轉地址
+	 - 如何利用轉型過後的資料與MapKit做各種應用
+ - [cocoapods的環境安裝](http://code4app.com/article/cocoapods-install-usage)（4.swift Cocoapods環境安裝）
+	 -  清楚講述安裝步驟，並解釋每個產生檔案的作用意義
+- [parse與 swift的連接](http://blog.parse.com/announcements/building-apps-with-parse-and-swift/)（5. swift與parse之間的連結）
+	 - 清楚講述如何將parse雲端資料庫和swift做連結並獲取相關資料
+ - [parse.com](https://www.parse.com)	
+	 - 可以手動建立資料庫也可以將JSON檔輸入自動產生資料庫
+- [在swift專案中使用objective-c 的函式](http://myxcodepractice.blogspot.tw/2014/07/swiftobjective-c-swiftmix.html)
+- [在objective-c 專案中寫 swift＆在swift 專案中寫 objective-c](http://tanjunqiang.com/index.php/archives/11)
 
 		
